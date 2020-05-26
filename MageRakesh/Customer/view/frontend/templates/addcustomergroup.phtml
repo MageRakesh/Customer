@@ -1,0 +1,16 @@
+<?php
+/** @var TYPE_NAME $blockObj */
+$blockObj= $block->getLayout()->createBlock('MageRakesh\Customer\Block\CustomerGroups');
+/** @var TYPE_NAME $groups */
+$groups = $blockObj->getCustomerGroup();
+?>
+<div class="field group_id required">
+    <label for="group_id" class="label"><span><?php /* @escapeNotVerified */ echo __('I want to register as') ?></span></label>
+    <div class="control">
+        <select name="group_id">
+            <?php foreach ($groups as $key => $data) { ?>
+                <option value="<?php echo $data['value'] ?>"><?php echo $data['label'] ?></option>
+            <?php } ?>
+        </select>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{
+    "name": "rakesh/magerakesh-customer",
+    "description": "magento2 CustomerGroup Registration Form",
+    "homepage": "https://github.com/MageRakesh",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "GNU General Public License v2.0",
+    "authors": [
+        {
+          "name": "Rakesh Roy",
+          "email": "rakeshroy78000@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/MageRakesh"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageRakesh\\Customer\\": ""
+        }
+    }
+}
